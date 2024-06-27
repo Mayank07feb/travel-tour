@@ -70,4 +70,19 @@ class HomeController extends Controller
     {
         return view('front_pages.404');
     }
+
+    public function login()
+    {
+        return view('front_pages.login');
+    }
+
+    public function register()
+    {
+        return view('front_pages.register');
+    }
+
+    public function myprofile()
+    {
+        return view('front_pages.myprofile');
+    }
 }

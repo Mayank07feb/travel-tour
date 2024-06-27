@@ -78,8 +78,7 @@
                         <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>
                         <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
                         <a href="#" class="text-white me-2"><i class="fas fa-credit-card fa-2x"></i></a>
-                        <a href="#" class="text-white me-2"><i
-                                class="fab fa-cc-mastercard fa-2x"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-cc-mastercard fa-2x"></i></a>
                         <a href="#" class="text-white me-2"><i class="fab fa-cc-paypal fa-2x"></i></a>
                         <a href="#" class="text-white"><i class="fab fa-cc-discover fa-2x"></i></a>
                     </div>
@@ -91,8 +90,8 @@
 
 
 
- <!-- Copyright Start -->
- <div class="container-fluid copyright text-body py-4">
+<!-- Copyright Start -->
+<div class="container-fluid copyright text-body py-4">
     <div class="container">
         <div class="row g-4 align-items-center">
             <div class="col-md-6 text-center text-md-end mb-md-0">
@@ -100,8 +99,8 @@
                 All right reserved.
             </div>
             <div class="col-md-6 text-center text-md-start">
-                
-                Designed By <a class="text-white" href="https://htmlcodex.com">Real Victor Group</a>
+
+                Designed By <a class="text-white" href="#">Real Victor Group</a>
             </div>
         </div>
     </div>

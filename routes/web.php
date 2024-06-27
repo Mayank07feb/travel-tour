@@ -17,3 +17,6 @@ Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
 Route::get('/guides', [HomeController::class, 'guides'])->name('guides');
 Route::get('/testimonial', [HomeController::class, 'testimonial'])->name('testimonial');
 Route::get('/page404', [HomeController::class, 'page404'])->name('page404');
+Route::get('/login', [HomeController::class, 'login'])->name('login');
+Route::get('/register', [HomeController::class, 'register'])->name('register');
+Route::get('/myprofile', [HomeController::class, 'myprofile'])->name('myprofile');
