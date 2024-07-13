@@ -77,7 +77,7 @@
     </div>
     <!-- Carousel End -->
 
-    <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%);">
+    {{-- <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%);">
         <div class="container">
             <div class="position-relative rounded-pill w-100 mx-auto p-5" style="background: rgba(19, 53, 123, 0.8);">
                 <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text"
@@ -86,7 +86,7 @@
                     style="top: 50%; right: 46px; transform: translateY(-50%);">Search</button>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Navbar & Hero End -->
 
     <!-- About Start -->
@@ -101,7 +101,7 @@
                 <div class="col-lg-7"
                     style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
                     <h5 class="section-about-title pe-3">About Us</h5>
-                    <h1 class="mb-4">Welcome to <span class="text-primary">Trevia
+                    <h1 class="mb-4">Welcome to <span class="text-primary">
                     </span></h1>
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolorum,
                         doloribus sunt dicta, officia voluptatibus libero necessitatibus natus impedit quam ullam
@@ -1463,7 +1463,7 @@
                 <div class="col-lg-6">
                     <h1 class="text-white mb-3">Book A Tour Deals</h1>
                     <p class="text-white mb-4">Get <span class="text-warning">50% Off</span> On Your First Adventure
-                        Trip With Travela. Get More Deal Offers Here.</p>
+                        Trip With. Get More Deal Offers Here.</p>
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">

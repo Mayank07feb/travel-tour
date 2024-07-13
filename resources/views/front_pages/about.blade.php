@@ -25,7 +25,7 @@
                 <div class="col-lg-7"
                     style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
                     <h5 class="section-about-title pe-3">About Us</h5>
-                    <h1 class="mb-4">Welcome to <span class="text-primary">Trevia
+                    <h1 class="mb-4">Welcome to <span class="text-primary">
                         </span></h1>
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolorum,
                         doloribus sunt dicta, officia voluptatibus libero necessitatibus natus impedit quam ullam

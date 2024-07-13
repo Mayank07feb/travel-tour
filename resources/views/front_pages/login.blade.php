@@ -21,19 +21,41 @@
             </div>
             <div class="card border-0 shadow-lg">
                 <div class="card-body p-5">
-                    <form>
+                    <!-- Display success message -->
+                    @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    <!-- Display validation errors -->
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <form method="POST" action="{{ route('login.post') }}">
+                        @csrf
                         <div class="mb-4">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="name@example.com" value="{{ old('email') }}" required>
                         </div>
                         <div class="mb-4">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Password" required>
                         </div>
                         <button type="submit" class="btn btn-primary w-100 py-2">Login</button>
                     </form>
                     <div class="text-center mt-4">
-                        <p class="text-muted">Don't have an account? <a href="{{ route('register') }}" class="text-decoration-none">Register here</a></p>
+                        <p class="text-muted">Don't have an account? <a href="{{ route('register') }}"
+                                class="text-decoration-none">Register here</a></p>
                     </div>
                 </div>
             </div>

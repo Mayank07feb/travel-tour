@@ -85,4 +85,19 @@ class HomeController extends Controller
     {
         return view('front_pages.myprofile');
     }
+
+    public function inbox()
+    {
+        return view('front_pages.inbox');
+    }
+
+    public function notifications()
+    {
+        return view('front_pages.notifications');
+    }
+
+    public function accountsetting()
+    {
+        return view('front_pages.accountsetting');
+    }
 }

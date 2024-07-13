@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProfileController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
@@ -17,6 +19,17 @@ Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
 Route::get('/guides', [HomeController::class, 'guides'])->name('guides');
 Route::get('/testimonial', [HomeController::class, 'testimonial'])->name('testimonial');
 Route::get('/page404', [HomeController::class, 'page404'])->name('page404');
-Route::get('/login', [HomeController::class, 'login'])->name('login');
-Route::get('/register', [HomeController::class, 'register'])->name('register');
-Route::get('/myprofile', [HomeController::class, 'myprofile'])->name('myprofile');
+Route::get('/login', [HomeController::class, 'login'])->name('login'); // Login form route
+Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register'); // Registration form route
+Route::post('/register', [RegisterController::class, 'register'])->name('register.post'); // Registration form submission route
+Route::post('/login', [LoginController::class, 'loginUser'])->name('login.post'); // Login form submission route
+Route::get('/myprofile', [HomeController::class, 'myprofile'])->name('myprofile'); // User profile route
+Route::get('/inbox', [HomeController::class, 'inbox'])->name('inbox');
+Route::get('/notifications', [HomeController::class, 'notifications'])->name('notifications');
+Route::get('/accountsetting', [HomeController::class, 'accountsetting'])->name('accountsetting');
+
+Route::post('profile/update', [ProfileController::class, 'updateProfile'])->name('profile.update');
+
+// Login routes
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login'); // Display login form
+Route::post('/logout', [App\Http\Controllers\LoginController::class, 'logout'])->name('logout');

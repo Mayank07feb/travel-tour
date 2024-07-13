@@ -12,6 +12,8 @@
     </div>
     <!-- Header End -->
 
+
+
     @if (Auth::check())
         <!-- Profile Start -->
         <div class="container-fluid py-5 bg-light">
@@ -22,33 +24,48 @@
                 </div>
                 <div class="card border-0 shadow-lg">
                     <div class="card-body p-5">
+                        @if (session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+
+                        @if (session('error'))
+                            <div class="alert alert-danger">
+                                {{ session('error') }}
+                            </div>
+                        @endif
                         <div class="mb-5 text-center">
-                            <img src="{{ Auth::user()->profile_image ?? 'default-profile.png' }}" alt="Profile Picture" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
+                            <img src="{{ Auth::user()->profile_image ?? 'default-profile.png' }}" alt="Profile Picture"
+                                class="rounded-circle mb-3" style="width: 150px; height: 150px;">
                             <h3>{{ Auth::user()->name }}</h3>
                             <p class="text-muted">{{ Auth::user()->email }}</p>
                         </div>
                         <form method="POST" action="{{ route('profile.update') }}" enctype="multipart/form-data">
                             @csrf
-                            @method('PUT')
                             <div class="mb-4">
                                 <label for="profile_image" class="form-label">Profile Image</label>
                                 <input type="file" class="form-control" id="profile_image" name="profile_image">
                             </div>
                             <div class="mb-4">
                                 <label for="name" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="name" name="name" value="{{ Auth::user()->name }}" required>
+                                <input type="text" class="form-control" id="name" name="name"
+                                    value="{{ Auth::user()->name }}" required>
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email" name="email" value="{{ Auth::user()->email }}" required>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    value="{{ Auth::user()->email }}" required>
                             </div>
                             <div class="mb-4">
                                 <label for="password" class="form-label">New Password</label>
-                                <input type="password" class="form-control" id="password" name="password" placeholder="Leave blank to keep current password">
+                                <input type="password" class="form-control" id="password" name="password"
+                                    placeholder="Leave blank to keep current password">
                             </div>
                             <div class="mb-4">
                                 <label for="password_confirmation" class="form-label">Confirm New Password</label>
-                                <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Leave blank to keep current password">
+                                <input type="password" class="form-control" id="password_confirmation"
+                                    name="password_confirmation" placeholder="Leave blank to keep current password">
                             </div>
                             <button type="submit" class="btn btn-primary w-100 py-2">Update Profile</button>
                         </form>
