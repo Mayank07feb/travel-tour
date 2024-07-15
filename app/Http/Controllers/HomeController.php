@@ -100,4 +100,19 @@ class HomeController extends Controller
     {
         return view('front_pages.accountsetting');
     }
+
+    public function kashmir()
+    {
+        return view('front_pages.kashmir');
+    }
+
+    public function rajasthan()
+    {
+        return view('front_pages.rajasthan');
+    }
+
+    public function india()
+    {
+        return view('front_pages.india');
+    }
 }

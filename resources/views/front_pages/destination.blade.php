@@ -31,7 +31,7 @@
                     <li class="nav-item">
                         <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
                             href="#tab-2">
-                            <span class="text-dark" style="width: 150px;">USA</span>
+                            <span class="text-dark" style="width: 150px;">India</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -221,22 +221,26 @@
                             </div>
                         </div>
                     </div>
+
+                    {{-- India Start --}}
+
                     <div id="tab-2" class="tab-pane fade show p-0">
                         <div class="row g-4">
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="{{ asset('asset/img/destination-5.jpg') }}"
+                                    <img class="img-fluid rounded w-100" src="{{ asset('asset/img/kashmir-1.jpg') }}"
                                         alt="">
                                     <div class="destination-overlay p-4">
                                         <a href="#"
                                             class="btn btn-primary text-white rounded-pill border py-2 px-3">20
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">
+                                            Kashmir Itinerary</h4>
+                                        <a href="{{route('kashmir')}}" class="btn-hover text-white">View All Place <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="{{ asset('asset/img/destination-5.jpg') }}"
+                                        <a href="{{ asset('asset/img/kashmir-1.jpg') }}"
                                             data-lightbox="destination-5"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
@@ -244,18 +248,18 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="destination-img">
-                                    <img class="img-fluid rounded w-100" src="{{ asset('asset/img/destination-6.jpg') }}"
+                                    <img class="img-fluid rounded w-100" src="{{ asset('asset/img/Rajasthan-1.jpg') }}"
                                         alt="">
                                     <div class="destination-overlay p-4">
                                         <a href="#"
                                             class="btn btn-primary text-white rounded-pill border py-2 px-3">20
                                             Photos</a>
-                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                        <h4 class="text-white mb-2 mt-3">Rajasthan Itinerary</h4>
+                                        <a href="{{route('rajasthan')}}" class="btn-hover text-white">View All Place <i
                                                 class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="search-icon">
-                                        <a href="{{ asset('asset/img/destination-6.jpg') }}"
+                                        <a href="{{ asset('asset/img/Rajasthan-1.jpg') }}"
                                             data-lightbox="destination-6"><i
                                                 class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                     </div>
@@ -263,6 +267,9 @@
                             </div>
                         </div>
                     </div>
+
+                    {{-- India End --}}
+
                     <div id="tab-3" class="tab-pane fade show p-0">
                         <div class="row g-4">
                             <div class="col-lg-6">

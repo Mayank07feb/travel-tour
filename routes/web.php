@@ -33,3 +33,13 @@ Route::post('profile/update', [ProfileController::class, 'updateProfile'])->name
 // Login routes
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login'); // Display login form
 Route::post('/logout', [App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
+
+
+// Country Start
+
+Route::get('/india', [HomeController::class, 'india'])->name('india');
+
+//India City Start
+
+Route::get('/kashmir', [HomeController::class, 'kashmir'])->name('kashmir');
+Route::get('/rajasthan', [HomeController::class, 'rajasthan'])->name('rajasthan');
