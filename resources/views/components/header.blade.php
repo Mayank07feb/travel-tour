@@ -1,9 +1,9 @@
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-        <a href="" class="navbar-brand p-0">
-            <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>AV VACATION</h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
+        <a href="{{ route('home') }}" class="navbar-brand p-0">
+            <img src="{{ asset('asset/img/logo.png') }}" alt="Logo" class="me-2" style="height: 100px;">
         </a>
+         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
         </button>
@@ -51,6 +51,8 @@
         </div>
     </nav>
 </div>
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
