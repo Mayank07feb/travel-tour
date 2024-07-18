@@ -11,7 +11,7 @@
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <img src="{{ asset('asset/img/carousel-2.jpg') }}" class="img-fluid w-100" alt="Image">
-                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                <div class="carousel-caption d-flex align-items-center justify-content-center">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-10">
@@ -43,7 +43,7 @@
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('asset/img/carousel-2.jpg') }}" class="img-fluid w-100" alt="Image">
-                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                <div class="carousel-caption d-flex align-items-center justify-content-center">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-10">
@@ -75,7 +75,7 @@
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('asset/img/carousel-3.jpg') }}" class="img-fluid w-100" alt="Image">
-                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                <div class="carousel-caption d-flex align-items-center justify-content-center">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-10">

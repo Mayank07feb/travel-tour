@@ -10,7 +10,7 @@
 <!-- Topbar Start -->
 <div class="container-fluid bg-primary px-5 d-lg-block">
     <div class="row gx-0">
-        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0 hide-icon">
             <div class="d-inline-flex align-items-center" style="height: 45px;">
                 <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
                         class="fab fa-twitter fw-normal"></i></a>

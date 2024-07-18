@@ -92,7 +92,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
-                        <a href="{{ route('destination') }}" class="dropdown-item">Destination</a>
+                        {{-- <a href="{{ route('destination') }}" class="dropdown-item">Destination</a> --}}
                         <a href="{{ route('gallery') }}" class="dropdown-item">Our Gallery</a>
                         <a href="{{ route('testimonial') }}" class="dropdown-item">Testimonial</a>
                     </div>
