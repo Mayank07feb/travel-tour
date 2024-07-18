@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Tour&Travel</title>
+    <title>AV VACATION</title>
+    <link rel="icon" type="image/png" href="{{ asset('asset/img/favicon.png') }}">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">

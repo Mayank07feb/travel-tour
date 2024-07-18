@@ -43,3 +43,11 @@ Route::get('/india', [HomeController::class, 'india'])->name('india');
 
 Route::get('/kashmir', [HomeController::class, 'kashmir'])->name('kashmir');
 Route::get('/rajasthan', [HomeController::class, 'rajasthan'])->name('rajasthan');
+
+
+// Footer Links
+
+Route::get('/legalnotice', [HomeController::class, 'legalnotice'])->name('legalnotice');
+Route::get('/privacypolicy', [HomeController::class, 'privacypolicy'])->name('privacypolicy');
+Route::get('/cookiepolicy', [HomeController::class, 'cookiepolicy'])->name('cookiepolicy');
+Route::get('/termsconditon', [HomeController::class, 'termsconditon'])->name('termsconditon');

@@ -24,28 +24,28 @@
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="mb-4 text-white">Company</h4>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> About</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Careers</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Blog</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Press</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Gift Cards</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Magazine</a>
+                    <a href="{{ route('about') }}"><i class="fas fa-angle-right me-2"></i> About</a>
+                    {{-- <a href=""><i class="fas fa-angle-right me-2"></i> Careers</a> --}}
+                    <a href="{{ route('blog') }}"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                    {{-- <a href=""><i class="fas fa-angle-right me-2"></i> Press</a> --}}
+                    {{-- <a href=""><i class="fas fa-angle-right me-2"></i> Gift Cards</a> --}}
+                    {{-- <a href=""><i class="fas fa-angle-right me-2"></i> Magazine</a> --}}
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="mb-4 text-white">Support</h4>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Contact</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Legal Notice</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Terms and Conditions</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Sitemap</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Cookie policy</a>
+                    <a href="{{ route('contact') }}"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                    <a href="{{ route('legalnotice') }}"><i class="fas fa-angle-right me-2"></i> Legal Notice</a>
+                    <a href="{{ route('privacypolicy') }}"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                    <a href="{{ route('termsconditon') }}"><i class="fas fa-angle-right me-2"></i> Terms and Conditions</a>
+                    {{-- <a href=""><i class="fas fa-angle-right me-2"></i> Sitemap</a> --}}
+                    <a href="{{ route('cookiepolicy') }}"><i class="fas fa-angle-right me-2"></i> Cookie policy</a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item">
-                    <div class="row gy-3 gx-2 mb-4">
+                    {{-- <div class="row gy-3 gx-2 mb-4">
                         <div class="col-xl-6">
                             <form>
                                 <div class="form-floating">
@@ -72,7 +72,7 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> --}}
                     <h4 class="text-white mb-3">Payments</h4>
                     <div class="footer-bank-card">
                         <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>

@@ -14,7 +14,7 @@
     <!-- Header End -->
 
     <!-- About Start -->
-    <div class="container-fluid about py-5">
+    <div class="container-fluid about">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5">
@@ -65,7 +65,7 @@
     <!-- About End -->
 
     <!-- Travel Guide Start -->
-    <div class="container-fluid guide py-5">
+    {{-- <div class="container-fluid guide py-5">
         <div class="container py-5">
             <div class="mx-auto text-center mb-5" style="max-width: 900px;">
                 <h5 class="section-title px-3">Travel Guide</h5>
@@ -178,7 +178,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Travel Guide End -->
 
     <!-- Subscribe Start -->

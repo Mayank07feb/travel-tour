@@ -1,81 +1,122 @@
 @extends('components.main')
 @section('content')
-    <!-- Carousel Start -->
-    <div class="carousel-header">
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="{{ asset('asset/img/carousel-2.jpg') }}" class="img-fluid" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore
-                                The World</h4>
-                            <h1 class="display-2 text-capitalize text-white mb-4">Let's The World Together!</h1>
-                            <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                1500s,
-                            </p>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5"
-                                    href="#">Discover Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('asset/img/carousel-2.jpg') }}" class="img-fluid" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">
-                                Explore The World</h4>
-                            <h1 class="display-2 text-capitalize text-white mb-4">Find Your Perfect Tour At Travel
-                            </h1>
-                            <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                1500s,
-                            </p>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5"
-                                    href="#">Discover Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('asset/img/carousel-3.jpg') }}" class="img-fluid" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">
-                                Explore The World</h4>
-                            <h1 class="display-2 text-capitalize text-white mb-4">You Like To Go?</h1>
-                            <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                1500s,
-                            </p>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5"
-                                    href="#">Discover Now</a>
+   <!-- Carousel Start -->
+<div class="carousel-header">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="{{ asset('asset/img/carousel-2.jpg') }}" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <h4 class="text-white text-uppercase fw-bold mb-2 mb-md-4" style="letter-spacing: 3px;">Explore The World</h4>
+                                <h1 class="display-4 text-capitalize text-white mb-2 mb-md-4">Let's The World Together!</h1>
+                                <p class="mb-3 mb-md-5 d-none d-sm-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="container-fluid px-0">
+                                    <form>
+                                        <div class="row g-2 g-md-3">
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <input type="text" class="form-control" placeholder="Your Name">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <input type="text" class="form-control" placeholder="Phone Number">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <input type="text" class="form-control" placeholder="Client id">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <button type="button" class="btn btn-primary w-100">BOOK NOW</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+                <img src="{{ asset('asset/img/carousel-2.jpg') }}" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <h4 class="text-white text-uppercase fw-bold mb-2 mb-md-4" style="letter-spacing: 3px;">Explore The World</h4>
+                                <h1 class="display-4 text-capitalize text-white mb-2 mb-md-4">Find Your Perfect Tour At Travel</h1>
+                                <p class="mb-3 mb-md-5 d-none d-sm-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="container-fluid px-0">
+                                    <form>
+                                        <div class="row g-2 g-md-3">
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <input type="text" class="form-control" placeholder="Your Name">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <input type="text" class="form-control" placeholder="Phone Number">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <input type="text" class="form-control" placeholder="Client id">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <button type="button" class="btn btn-primary w-100">BOOK NOW</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('asset/img/carousel-3.jpg') }}" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <h4 class="text-white text-uppercase fw-bold mb-2 mb-md-4" style="letter-spacing: 3px;">Explore The World</h4>
+                                <h1 class="display-4 text-capitalize text-white mb-2 mb-md-4">You Like To Go?</h1>
+                                <p class="mb-3 mb-md-5 d-none d-sm-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="container-fluid px-0">
+                                    <form>
+                                        <div class="row g-2 g-md-3">
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <input type="text" class="form-control" placeholder="Your Name">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <input type="text" class="form-control" placeholder="Phone Number">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <input type="text" class="form-control" placeholder="Client id">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-3">
+                                                <button type="button" class="btn btn-primary w-100">BOOK NOW</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <!-- Carousel End -->
+</div>
+<!-- Carousel End -->
 
     {{-- <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%);">
         <div class="container">
@@ -90,7 +131,7 @@
     <!-- Navbar & Hero End -->
 
     <!-- About Start -->
-    <div class="container-fluid about py-5">
+    <div class="container-fluid about">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5">
@@ -715,7 +756,7 @@
     <!-- Destination End -->
 
     <!-- Explore Tour Start -->
-    <div class="container-fluid ExploreTour py-5">
+    {{-- <div class="container-fluid ExploreTour py-5">
         <div class="container py-5">
             <div class="mx-auto text-center mb-5" style="max-width: 900px;">
                 <h5 class="section-title px-3">Explore Tour</h5>
@@ -939,7 +980,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Explore Tour Start -->
 
     <!-- Packages Start -->
@@ -1577,7 +1618,7 @@
     <!-- Tour Booking End -->
 
     <!-- Travel Guide Start -->
-    <div class="container-fluid guide py-5">
+    {{-- <div class="container-fluid guide py-5">
         <div class="container py-5">
             <div class="mx-auto text-center mb-5" style="max-width: 900px;">
                 <h5 class="section-title px-3">Travel Guide</h5>
@@ -1690,7 +1731,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Travel Guide End -->
 
     <!-- Blog Start -->

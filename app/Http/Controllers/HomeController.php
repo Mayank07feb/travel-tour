@@ -115,4 +115,24 @@ class HomeController extends Controller
     {
         return view('front_pages.india');
     }
+
+    public function legalnotice()
+    {
+        return view('front_pages.legalnotice');
+    }
+
+    public function privacypolicy()
+    {
+        return view('front_pages.privacypolicy');
+    }
+
+    public function termsconditon()
+    {
+        return view('front_pages.termsconditon');
+    }
+
+    public function cookiepolicy()
+    {
+        return view('front_pages.cookiepolicy');
+    }
 }

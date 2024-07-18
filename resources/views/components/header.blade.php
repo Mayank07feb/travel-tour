@@ -1,9 +1,9 @@
-<div class="container-fluid position-relative p-0">
+{{-- <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
         <a href="{{ route('home') }}" class="navbar-brand p-0">
-            <img src="{{ asset('asset/img/logo.png') }}" alt="Logo" class="me-2" style="height: 100px;">
+            <img src="{{ asset('asset/img/logo.png') }}" alt="Logo" class="me-2" style="height: 100px; width: auto;">
         </a>
-         
+                
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
         </button>
@@ -50,8 +50,64 @@
                 data-bs-target="#bookingModal">Book Now</a>
         </div>
     </nav>
-</div>
+</div> --}}
 
+
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="{{ route('home') }}" class="navbar-brand p-0">
+            <img src="{{ asset('asset/img/logo.png') }}" alt="Logo" class="me-2" style="height: 100px; width: auto;">
+        </a>
+
+
+        <!-- Mobile view only -->
+        <div class="d-lg-none ml-auto">
+            <a href="#" class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal"
+                data-bs-target="#bookingModal">Book Now</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+                <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
+                <a href="{{ route('services') }}" class="nav-item nav-link">Services</a>
+                <a href="{{ route('packages') }}" class="nav-item nav-link">Packages</a>
+                <a href="{{ route('blog') }}" class="nav-item nav-link">Blog</a>
+                <div class="nav-item dropdown">
+                    <a href="{{ route('destination') }}" class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">Destinations</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="{{ route('india') }}" class="dropdown-item">India Destinations</a>
+                        <a href="#" class="dropdown-item">London Itinerary</a>
+                        <a href="#" class="dropdown-item">Italy Itinerary</a>
+                        <a href="#" class="dropdown-item">Singapore Itinerary</a>
+                        <a href="#" class="dropdown-item">Vietnam Itinerary</a>
+                        <a href="#" class="dropdown-item">Turkey Itinerary</a>
+                        <a href="#" class="dropdown-item">Thailand Itinerary</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="{{ route('destination') }}" class="dropdown-item">Destination</a>
+                        <a href="{{ route('gallery') }}" class="dropdown-item">Our Gallery</a>
+                        <a href="{{ route('testimonial') }}" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+
+        <!-- Large devices (desktops, tablets) -->
+        <div class="d-none d-lg-block">
+            <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4" data-bs-toggle="modal"
+                data-bs-target="#bookingModal">Book Now</a>
+        </div>
+    </nav>
+</div>
 
 
 <!-- Modal -->
@@ -60,7 +116,7 @@
         <div class="modal-content"
             style="background-image: url('{{ asset('asset/img/blog-1.jpg') }}'); background-size: cover; background-repeat: no-repeat; color: white;">
             <div class="modal-header" style="background: rgba(0, 0, 0, 0.7);">
-                <h5 class="modal-title" id="bookingModalLabel">Travel Booking Form</h5>
+                <h5 class="modal-title text-white" id="bookingModalLabel">Travel Booking Form</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                     aria-label="Close"></button>
             </div>
